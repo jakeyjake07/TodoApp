@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jakeyjake/Documents/TodoApp/TodoApp/TodoApp.csproj": {}
+    "/Users/nyte/Desktop/TodoApp/TodoApp.csproj": {}
   },
   "projects": {
-    "/Users/jakeyjake/Documents/TodoApp/TodoApp/TodoApp.csproj": {
+    "/Users/nyte/Desktop/TodoApp/TodoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jakeyjake/Documents/TodoApp/TodoApp/TodoApp.csproj",
+        "projectUniqueName": "/Users/nyte/Desktop/TodoApp/TodoApp.csproj",
         "projectName": "TodoApp",
-        "projectPath": "/Users/jakeyjake/Documents/TodoApp/TodoApp/TodoApp.csproj",
-        "packagesPath": "/Users/jakeyjake/.nuget/packages/",
-        "outputPath": "/Users/jakeyjake/Documents/TodoApp/TodoApp/obj/",
+        "projectPath": "/Users/nyte/Desktop/TodoApp/TodoApp.csproj",
+        "packagesPath": "/Users/nyte/.nuget/packages/",
+        "outputPath": "/Users/nyte/Desktop/TodoApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/jakeyjake/.nuget/NuGet/NuGet.Config"
+          "/Users/nyte/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"

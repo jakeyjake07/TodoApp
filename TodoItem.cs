@@ -7,6 +7,7 @@ namespace TodoApp
 {
     public class TodoItem
     {
+<<<<<<< HEAD
         var repo = new TodoRepository();
 
         Console.WriteLine("Todo-lista. Skriv 'hjälp' för kommandon.");
@@ -46,5 +47,8 @@ while (true)
             break;
     }
 }
+=======
+        
+>>>>>>> 7eb07f1f5be6778ccb4beb232b69105f86503a10
     }
 }
