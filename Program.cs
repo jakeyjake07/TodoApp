@@ -35,6 +35,29 @@ namespace TodoApp
                         Console.WriteLine($"✓ Uppgift tillagd: \"{argument}\"");
                         break;
 
+                    case "list":
+                        var allTodos = repository.LoadAll();
+                        if (allTodos.Count == 0)
+                        {
+                            Console.WriteLine("Inga uppgifter finns.");
+                            break;
+                        }
+                        foreach (var todo in allTodos)
+                        {
+                            string status = todo.IsCompleted ? "[x]" : "[ ]";
+                            Console.WriteLine($"{status} [{todo.Id}] {todo.Title}");
+                        }
+                        break;
+
+                    case "summary":
+                        var summaryTodos = repository.LoadAll();
+                        int completed = summaryTodos.Count(t => t.IsCompleted);
+                        int remaining = summaryTodos.Count(t => !t.IsCompleted);
+                        Console.WriteLine($"Total: {summaryTodos.Count} uppgifter");
+                        Console.WriteLine($"✓ Klara: {completed}");
+                        Console.WriteLine($"○ Kvar: {remaining}");
+                        break;
+
                     case "complete":
                         if (int.TryParse(argument, out int completeId))
                         {
