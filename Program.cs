@@ -1,4 +1,4 @@
-﻿namespace TodoApp
+namespace TodoApp
 {
     internal class Program
     {
