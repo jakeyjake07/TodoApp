@@ -8,19 +8,19 @@
     "net10.0": []
   },
   "packageFolders": {
-    "/Users/nyte/.nuget/packages/": {}
+    "/Users/jakeyjake/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nyte/Desktop/TodoApp/TodoApp.csproj",
+      "projectUniqueName": "/Users/jakeyjake/Documents/TodoApp/TodoApp/TodoApp.csproj",
       "projectName": "TodoApp",
-      "projectPath": "/Users/nyte/Desktop/TodoApp/TodoApp.csproj",
-      "packagesPath": "/Users/nyte/.nuget/packages/",
-      "outputPath": "/Users/nyte/Desktop/TodoApp/obj/",
+      "projectPath": "/Users/jakeyjake/Documents/TodoApp/TodoApp/TodoApp.csproj",
+      "packagesPath": "/Users/jakeyjake/.nuget/packages/",
+      "outputPath": "/Users/jakeyjake/Documents/TodoApp/TodoApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/nyte/.nuget/NuGet/NuGet.Config"
+        "/Users/jakeyjake/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
