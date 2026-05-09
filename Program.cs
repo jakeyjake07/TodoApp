@@ -24,14 +24,14 @@
                             Console.WriteLine("Ange en uppgift. Ex: add Fixa login");
                             break;
                         }
-                        var todos = repo.Load();
+                        var todos = repo.LoadAll();
                         var newItem = new TodoItem
                         {
                             Id = todos.Count + 1,
                             Title = argument
                         };
                         todos.Add(newItem);
-                        repo.Save(todos);
+                        repo.SaveAll(todos);
                         Console.WriteLine($"✓ Uppgift tillagd: \"{argument}\"");
                         break;
 

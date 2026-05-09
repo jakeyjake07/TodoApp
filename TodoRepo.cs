@@ -1,27 +1,28 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace TodoApp
 {
-}
-public class TodoRepo
-{
-    private readonly string _filePath = "todos.json";
-
-    public List<TodoItem> Load()
+    public class TodoRepo
     {
-        if (!File.Exists(_filePath))
-            return new List<TodoItem>();
+        private readonly string _filePath = "todos.json";
 
-        var json = File.ReadAllText(_filePath);
-        return JsonSerializer.Deserialize<List<TodoItem>>(json) ?? new List<TodoItem>();
-    }
+        public List<TodoItem> LoadAll()
+        {
+            if (!File.Exists(_filePath))
+                return new List<TodoItem>();
 
-    public void Save(List<TodoItem> items)
-    {
-        var json = JsonSerializer.Serialize(items, new JsonSerializerOptions { WriteIndented = true });
-        File.WriteAllText(_filePath, json);
+            string json = File.ReadAllText(_filePath);
+            return JsonSerializer.Deserialize<List<TodoItem>>(json) ?? new List<TodoItem>();
+        }
+
+        public void SaveAll(List<TodoItem> todos)
+        {
+            string json = JsonSerializer.Serialize(todos, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(_filePath, json);
+        }
     }
 }
