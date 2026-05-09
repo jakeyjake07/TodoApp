@@ -4,7 +4,7 @@ namespace TodoApp
     {
         static void Main(string[] args)
         {
-            var repo = new TodoRepo();
+            var repository = new TodoRepo();
 
             Console.WriteLine("Todo-lista. Skriv 'hjälp' för kommandon.");
 
@@ -24,14 +24,14 @@ namespace TodoApp
                             Console.WriteLine("Ange en uppgift. Ex: add Fixa login");
                             break;
                         }
-                        var todos = repo.LoadAll();
+                        var todos = repository.LoadAll();
                         var newItem = new TodoItem
                         {
                             Id = todos.Count + 1,
                             Title = argument
                         };
                         todos.Add(newItem);
-                        repo.SaveAll(todos);
+                        repository.SaveAll(todos);
                         Console.WriteLine($"✓ Uppgift tillagd: \"{argument}\"");
                         break;
 
