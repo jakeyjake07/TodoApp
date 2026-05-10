@@ -8,6 +8,8 @@ namespace TodoApp
 
             Console.WriteLine("Todo-lista. Skriv 'hjälp' för kommandon.");
 
+            Console.WriteLine("!Conflict!");
+
             while (true)
             {
                 Console.Write("\n> ");
