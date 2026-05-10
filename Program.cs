@@ -8,7 +8,7 @@ namespace TodoApp
 
             Console.WriteLine("Todo-lista. Skriv 'hjälp' för kommandon.");
 
-            Console.WriteLine("Branch A");
+
 
             while (true)
             {
