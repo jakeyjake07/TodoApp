@@ -14,3 +14,6 @@ Japp, allt gick bra, vi hade inga större problem och alla i gruppen var nöjda 
 
 <--- Vad hade vi förändrat? --->
 Träffar kunde varit bättre, det var svårt att koordinera alla i gruppen samtidigt.
+
+<--- CI/CD? --->
+Vi valde att inte använde ci/cd, i ett verkligt projekt hade det kunnat vara nödvändigt för att automatisera tester och deployment när man mergar in i main.
